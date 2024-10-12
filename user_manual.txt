@@ -1,0 +1,97 @@
+User Manual for the Keyboard Test Application
+Introduction
+
+Welcome to the Keyboard Test Application! This program is designed to help users improve their keyboard skills by testing how quickly and accurately they can press the correct keys when prompted. The application is intuitive, easy to use, and includes features such as score tracking, previous test results viewing, and a fun, engaging user interface with images.
+
+System Requirements
+
+Python 3.x installed on your system.
+The following Python libraries:
+  tkinter: for creating the GUI.
+  PIL (Pillow): for handling and displaying images.
+
+To install Pillow, run the following command in your terminal:
+  pip install pillow
+
+Ensure that you have the following image files in the same directory as the program:
+  ChooChooCharles.jpg
+  SirenHead.jpg
+
+How to Run the Program
+Launch the Program:
+  Open a terminal or command prompt, navigate to the directory where the script is located, and run the program with the command:
+  python keyboard_test_app.py
+
+Main Features
+1. Main Window
+
+The main window is the starting point of the application. Here, you can:
+  Enter Your Name: Input your name in the text field provided.
+  Start the Test: Press the "Start Test" button to begin the keyboard test.
+  Load Previous Results: Press the "Load Previous Results" button to view previous test scores from the saved output file.
+  Calculate Total Results: Press the "Calculate Total Results" button to see a summary of your total correct answers and total attempted answers from previous tests.
+  Images: Two images are displayed in the application: "Choo Choo Charles" in the main window and "Siren Head" in the results window.
+
+2. Test Window
+
+Once you start the test, a new window will open:
+  A random lowercase letter will be displayed, and you must press the corresponding key on your keyboard.
+  End Test Early: If you wish to stop the test early, press the "End Test Early" button. The results will be shown up to the point you stopped.
+
+3. Results Window
+After completing the test, a results window will show:
+  Your Score: The number of correct answers out of the total attempts.
+  Missed Letters: Any letters you missed during the test will be displayed.
+  Image: The "Siren Head" image will be shown in this window with alternate text below it.
+  Close Button: You can close the window by pressing the "Close" button.
+
+4. Previous Results Window
+When you press the "Load Previous Results" button:
+  A new window will display all previous test results stored in the output file.
+  You can scroll through the text and view your scores.
+
+5. Total Results Window
+When you press the "Calculate Total Results" button:
+  A window will display the total number of correct answers and the total number of attempts from all your previous tests.
+
+Detailed Steps
+  Entering Your Name:
+      In the main window, there is a text field where you should enter your name. The name is required to start the test.
+
+  Starting the Test:
+      After entering your name, click the "Start Test" button to begin. A new window will appear, prompting you to press a key that corresponds to the displayed letter.
+      If you miss a letter or press the wrong key, it will be recorded in the results.
+
+  Viewing Results:
+      Once the test ends, a results window will appear, showing how many letters you got correct and which letters were missed.
+
+  Viewing Previous Results:
+      Click the "Load Previous Results" button to open a window displaying all the test results stored in the output file.
+
+  Calculating Total Results:
+      Click the "Calculate Total Results" button to view the total number of correct and attempted answers across all tests.
+
+  Exiting:
+      Use the "Close" button on any window to close it and return to the main window.
+
+Error Handling & Input Validation
+  The application ensures that the name field is not left empty before starting the test. If the name field is empty, you will be prompted with a message to enter your name.
+  If you attempt to load results or calculate total results when no data is available, the program will inform you that no previous results are found.
+
+Output File: test_results.txt
+  The program automatically creates and stores results in a file called test_results.txt in the same directory as the script.
+  Each entry in this file contains the student's name, the number of correct answers, the total number of attempts, and any missed letters.
+
+Images
+  ChooChooCharles.jpg: Displayed in the main window.
+  SirenHead.jpg: Displayed in the results window.
+
+Known Issues
+  Ensure that the required image files (ChooChooCharles.jpg and SirenHead.jpg) are present in the same directory as the Python script. Otherwise, the images will not be displayed.
+  The program does not validate the content of the name field beyond ensuring that it is not empty. Avoid entering special characters that could interfere with the output file formatting.
+
+
+
+This application provides a simple, user-friendly way to test and improve your keyboard skills. With features like score tracking, test history, and real-time feedback, it is an effective tool for both beginners and experienced typists looking to enhance their proficiency.
+
+Enjoy your keyboarding journey!
